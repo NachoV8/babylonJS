@@ -1,0 +1,13 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "build",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "npm: build",
+            "detail": "esbuild src/app.ts --bundle --sourcemap --target=es2015 --outfile=dist/app.js"
+        }
+    ]
+}
