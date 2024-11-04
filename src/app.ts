@@ -112,9 +112,9 @@ class App {
         //Iluminación
 
         // let light = new PointLight("pointLight", new Vector3(0, 10, -5), scene);
-        let light = new DirectionalLight("direccionalLight", new Vector3(-5, -5, 25), scene);    
+        // let light = new DirectionalLight("direccionalLight", new Vector3(-5, -5, 25), scene);    
         // let light = new SpotLight("spotLight", new Vector3(-50, 40, 32), new Vector3(2, -2, 0), Math.PI / 2, 50,  scene);
-        // let light = new HemisphericLight("HemiLight", new Vector3(0, 1, 0), scene);
+        let light = new HemisphericLight("HemiLight", new Vector3(0, 1, 0), scene);
 
         // light.diffuse = new Color3(0, 0.8, 0);
         //light.specular = new Color3(0.9, 0, 0);
@@ -155,5 +155,5 @@ class App {
         return scene;
     }
 }
- 
+
 new App()
